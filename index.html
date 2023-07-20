@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap</title>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="pagina">
+        <header>
+             <!-- MENU DE NAVEGAÇÃO PRINCIPAL -->
+             <nav class="navbar navbar-expand-sm bg-dark fixed-top" id="menuHeader">
+                <div class="container-fluid">
+                    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerElements" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerElements">
+                        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                            <li class="nav-item"><a href="#inicio" class="nav-link text-white">Inicio</a></li>
+                            <li class="nav-item"><a href="#tiposTexto" class="nav-link text-white">Text types</a></li>
+                            <li class="nav-item"><a href="#container" class="nav-link text-white">Container</a></li>
+                            <li class="nav-item"><a href="#containerAtributos" class="nav-link text-white">Container com atributos</a></li>
+                            <li class="nav-item"><a href="#grid" class="nav-link text-white">Grid</a></li>
+                            <li class="nav-item"><a href="#cores" class="nav-link text-white">Colors</a></li>
+                            <li class="nav-item"><a href="#tabelas" class="nav-link text-white">Tables</a></li>
+                            <li class="nav-item"><a href="#imagens" class="nav-link text-white">Images</a></li>
+                            <li class="nav-item"><a href="#alerta" class="nav-link text-white">Alerts</a></li>
+                            <li class="nav-item"><a href="#botoes" class="nav-link text-white">Button</a></li>
+                            <li class="nav-item"><a href="#badges" class="nav-link text-white">Badges</a></li>
+                            <li class="nav-item"><a href="#progress" class="nav-link text-white">Progress Bar</a></li>
+                            <li class="nav-item"><a href="#dropDown" class="nav-link text-white">DropDown</a></li>
+                            <li class="nav-item"><a href="#slider" class="nav-link text-white">Slider</a></li>
+                            <li class="nav-item"><a href="#nav" class="nav-link text-white">Nav</a></li>
+                            <li class="nav-item"><a href="#modal" class="nav-link text-white">Modal</a></li>
+                            <li class="nav-item"><a href="#offcanvasEx" class="nav-link text-white">Offcanvas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid bg-primary py-5" id="inicio">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">BootStrap Dicionário</p>
+                <img src="images/bootstrap-fill.svg" width="200px" class="py-3">
+                <p class="h6 text-white">Desenvolvido por Victor Santos Rohod</p>
+            </div>
+            <!-- SEÇÃO DE TIPOS DE TEXTO -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="tiposTexto">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Text Types</p>
+                <p class="h1 text-white">h1</p>
+                <p class="h2 text-white">h2</p>
+                <p class="h3 text-white">h3</p>
+                <p class="h4 text-white">h4</p>
+                <p class="h5 text-white">h5</p>
+                <p class="h6 text-white">h6</p>
+                <p class="display-1 text-white">display-1</p>
+                <p class="display-2 text-white">display-2</p>
+                <p class="display-3 text-white">display-3</p>
+                <p class="display-4 text-white">display-4</p>
+                <p class="display-5 text-white">display-5</p>
+                <p class="display-6 text-white">display-6</p>
+                <p class="bg-white lead">Um parágrafo com lead</p>
+                <p class="bg-white text-monospace">Um parágrafo com mono space</p>
+                <p class="bg-white text-uppercase">Um parágrafo com UPPERCASE</p>
+                <p class="bg-white text-lowercase">UM PARAGRAFO COM LOWERCASE</p>
+                <p class="bg-white text-capitalize">Um parágrafo com capitalize</p>
+                <p class="text-white">Isto é um <mark> um mark com bootstrap </mark></p>
+                <p class="text-white">Isto é um <abbr title="Abbr é uma abreviação! E no title você põe o que ele significa"> um abbr com bootstrap </abbr></p>
+                <p class="text-white">Isto é um <blockquote class="blockquote bg-white"> um blockquote com bootstrap </blockquote> <blockquote class="blockquote-footer bg-white">E aqui um footer para o blockquote</blockquote></p>
+                <dl class="bg-white">
+                    <dt>Isto é um termo com o bootstrap</dt>
+                    <dd> - E isso é uma descrição do termo</dd>
+                </dl>
+                <cite class="bg-white">Isso é um cite!</cite>
+                <p class="bg-white">Os termos a seguir são códigos HTML formatados pelo bootstrap! São eles <code>body</code>,<code>footer</code>,<code>header</code> e <code>main</code></p>
+                <p class="bg-white">O termo a seguir é um comando de recorte <kbd>Ctrl + x</kbd></p>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE CONTAINER -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="container">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Container's padrão</p>
+                <div class="container bg-white">
+                    Esse é um container
+                </div>
+                <div class="container-fluid bg-white">
+                    Esse é um container fluid
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE CONTAINER COM ATRIBUTOS-->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="containerAtributos">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Container's com atributos BootStrap</p>
+                <div class="container p-5 my-5 border text-white">
+                    Esse é um container
+                </div>
+                <div class="container-fluid p-5 my-5 bg-dark text-white">
+                    Esse é um container fluid
+                </div>
+                <div class="container-fluid p-2 my-5 bg-primary text-white">
+                    Esse é um container fluid
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE GRID -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="grid">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Grid</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                        <div class="col-1 pt-3 pb-3 bg-primary text-white">Col1</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 pt-3 pb-3 bg-dark text-white">Col4</div>
+                        <div class="col-4 pt-3 pb-3 bg-dark text-white">Col4</div>
+                        <div class="col-4 pt-3 pb-3 bg-dark text-white">Col4</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 pt-3 pb-3 bg-primary text-white">Col8</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pt-3 pb-3 bg-dark text-white">Col6</div>
+                        <div class="col-6 pt-3 pb-3 bg-dark text-white">Col6</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pt-3 pb-3 bg-primary text-white">Col12</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE CORES -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="cores">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Colors</p>
+                <p class="h2 text-info">Background</p>
+                <div class="container bg-primary text-white">bg-primary</div>
+                <div class="container bg-secondary text-white">bg-secondary</div>
+                <div class="container bg-success text-white">bg-success</div>
+                <div class="container bg-warning">bg-warning</div>
+                <div class="container bg-danger text-white">bg-danger</div>
+                <div class="container bg-info">bg-info</div>
+                <div class="container bg-dark text-white">bg-dark</div>
+                <div class="container bg-white">bg-white</div>
+                <p class="h2 text-info">Texto</p>
+                <p class="text-primary bg-white">text-primary</p>
+                <p class="text-secondary bg-white">text-secondary</p>
+                <p class="text-success bg-white">text-success</p>
+                <p class="text-warning bg-white">text-warning</p>
+                <p class="text-danger bg-white">text-danger</p>
+                <p class="text-info bg-white">text-info</p>
+                <p class="text-light bg-dark">text-light</p>
+                <p class="text-white bg-dark">text-white</p>
+                <p class="text-dark bg-white">text-dark</p>
+                <p class="text-body bg-white">text-body</p>
+                <p class="text-muted bg-white">text-muted</p>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE TABELAS -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="tabelas">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Tables</p>
+                <p class="h3 text-white">.table</p>
+                <table class="table bg-white">
+                    <tr>
+                        <th>Primeiro nome</th>
+                        <th>Segundo nome</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>Jhon</td>
+                        <td>Wasaski</td>
+                        <td>jhonwasaski@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jessica</td>
+                        <td>Mayor</td>
+                        <td>jessicamayor28897@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mike</td>
+                        <td>Taylor</td>
+                        <td>jedi68@gmail.com</td>
+                    </tr>
+                </table>
+                <p class="h3 text-white">.table-striped</p>
+                <table class="table table-striped bg-white">
+                    <tr>
+                        <th>Primeiro nome</th>
+                        <th>Segundo nome</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>Jhon</td>
+                        <td>Wasaski</td>
+                        <td>jhonwasaski@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jessica</td>
+                        <td>Mayor</td>
+                        <td>jessicamayor28897@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mike</td>
+                        <td>Taylor</td>
+                        <td>jedi68@gmail.com</td>
+                    </tr>
+                </table>
+                <p class="h3 text-white">.table-hover</p>
+                <table class="table table-hover bg-white">
+                    <tr>
+                        <th>Primeiro nome</th>
+                        <th>Segundo nome</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>Jhon</td>
+                        <td>Wasaski</td>
+                        <td>jhonwasaski@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jessica</td>
+                        <td>Mayor</td>
+                        <td>jessicamayor28897@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mike</td>
+                        <td>Taylor</td>
+                        <td>jedi68@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE IMAGENS -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="imagens">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Images</p>
+                <p class="h3 text-white">.rounded</p>
+                <img src="images/plantas.jpg" class="rounded" alt="" width="500px">
+                <p class="h3 text-white">.rounded-circle</p>
+                <img src="images/plantas.jpg" class="rounded-circle" alt="" width="500px">
+                <p class="h3 text-white">.img-thumbnail</p>
+                <img src="images/plantas.jpg" class="img-thumbnail" alt="" width="500px">
+                <p class="h3 text-white">.float</p>
+                <img src="images/plantas.jpg" class="float-start" alt="" width="500px">
+                <img src="images/plantas.jpg" class="float-end" alt="" width="500px">
+                <div id="space"></div>
+                <p class="h3 text-white">.mx-auto .d-block (Centralizar IMG)</p>
+                <img src="images/plantas.jpg" class="mx-auto d-block" alt="" width="500px">
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE ALERTAS -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="alerta">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Alerts</p>
+                <div class="alert alert-success"><strong>SUCCESS</strong> É algo que deu sucesso ou positivo! alert alert-success</div>
+                <div class="alert alert-info"><strong>INFO</strong> É algo neutro que indica uma informação! <a href="#" class="alert-link">clique aqui para saber mais, isto é um alert-link</a></div>
+                <div class="alert alert-warning"><strong>WARNING</strong> É algo que é um alerta, precisa de atenção!</div>
+                <div class="alert alert-danger"><strong>DANGER</strong> É algo que deu errado ou uma ação negativa!</div>
+                <div class="alert alert-primary"><strong>PRIMARY</strong> É uma ação importante!</div>
+                <div class="alert alert-secondary"><strong>SECONDARY</strong> É uma ação menos importante!</div>
+                <div class="alert alert-dark"><strong>DARK</strong> Alerta em cinza!</div>
+                <div class="alert alert-light"><strong>LIGHT</strong> Alerta em branco!</div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE BOTÕES -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="botoes">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Buttons</p>
+                <p class="h3 text-white">Button Styles</p>
+                <button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <p class="h3 text-white">Button Outline</p>
+                <p class="bg-white">
+                <button type="button" class="btn btn-outline-primary">Primary outline</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
+                <button type="button" class="btn btn-outline-success">Success outline</button>
+                <button type="button" class="btn btn-outline-info">Info outline</button>
+                <button type="button" class="btn btn-outline-warning">Warning outline</button>
+                <button type="button" class="btn btn-outline-danger">Danger outline</button>
+                <button type="button" class="btn btn-outline-dark">Dark outline</button>
+                <button type="button" class="btn btn-outline-light">Light outline</button>
+                <button type="button" class="btn btn-outline-link">Link outline</button>
+                <p class="h3 text-white">Botões ativados e desativados</p>
+                <button type="button" class="btn btn-primary active">Primary ativo</button>
+                <button type="button" class="btn btn-primary disabled">Primary desativado</button>
+                <p class="h3 text-white">Botões Spinner</p>
+                <button type="button" class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span>
+                </button>
+                <button type="button" class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Carregando...
+                </button>
+                <button type="button" class="btn btn-primary" disabled>
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Carregando...
+                </button>
+                <button type="button" class="btn btn-primary" disabled>
+                    <span class="spinner-grow spinner-grow-sm"></span>
+                    Carregando...
+                </button>
+                </p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE BADGES -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="badges">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Badges</p>
+                <span class="badge bg-primary">Contextual Badge</span>
+                <span class="badge rounded-pill bg-primary">Pill Badge</span>
+                <button type="button" class="btn btn-primary">
+                    Alertas <span class="badge bg-danger">4</span>
+                </button>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE PROGESS BAR -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="progress">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Progress bar</p>
+                <p class="h3 text-white">Progress bar padrão</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+                <p class="h3 text-white">Progress bar striped</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" style="width: 40%;">70%</div>
+                </div>
+                <p class="h3 text-white">Progress bar animado</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%;">70%</div>
+                </div>
+                <p class="h3 text-white">Progress bar multipla</p>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" style="width: 40%;">40%</div>
+                    <div class="progress-bar bg-warning" style="width: 10%;">10%</div>
+                    <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+                </div>
+            </div> 
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE DROPDOWN -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="dropDown">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">DropDown</p>
+                <p class="h3 text-white">DropDown para baixo</p>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Este é o botão do dropDown</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE DROPDOWN PARA A LATERAL -->
+                <p class="h3 text-white">DropDown para o lado</p>
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Este é o botão do dropDown</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE SLIDER -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="slider">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Slider</p>
+                <!-- Carrosel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                <!-- SlideShow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/los.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/chi.jpg" alt="Chicago" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/new.jpg" alt="New York" class="d-block" style="width:100%">
+                        </div>
+                    </div>
+                <!-- Controles esquerda e direita -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE NAV -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="nav">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Nav</p>
+                <nav class="navbar navbar-expand-sm bg-light">
+                    <div class="container-fluid">
+                    <!-- Links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Isso é um link muito legal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Isso é um link mais legal ainda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Isso é o link mais legal de todos</a>
+                            </li>
+                        </ul>
+                    </div>
+              </nav>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE MODAL -->
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="modal">
+                <div class="spaceSection"></div>
+                <p class="h1 text-white">Modal</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Abrir o modal</button>
+                  <!-- O modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Header do Modal</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Corpo do Modal
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+
+            <!-- SEÇÃO DE OFFCANVAS -->
+            <div class="offcanvas offcanvas-start" id="offcanvas" tabindex="-1">
+                <div class="spaceSection"></div>
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title" id="offcanvasLabel">Header</h1>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Um texto super legal</p>
+                    <p>Outro texto menos legal, porém importante</p>
+                    <button class="btn btn-secondary" type="button">Um botão</button>
+                </div>
+            </div>
+            <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3">
+                <p class="h1 text-white">Offcanvas</p>
+                <!-- Botão para abrir a sidebar -->
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">Abrir a sidebar</button>
+            </div>
+            <hr>
+            <div class="spaceSection"></div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

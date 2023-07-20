@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+}
+
+#space{
+    width: 500px;
+    height: 333.33px;
+}
+
+.spaceSection{
+    width: 100%;
+    height: 60px;
+}
+
+li{
+    font-size: 8pt;
+}
