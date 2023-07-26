@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,18 @@
     <title>BootStrap</title>
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/@mediaMobile.css" media="screen and (max-width : 1025px)">
 </head>
+
 <body>
     <div id="pagina">
         <header>
-             <!-- MENU DE NAVEGAÇÃO PRINCIPAL -->
-             <nav class="navbar navbar-expand-sm bg-dark fixed-top" id="menuHeader">
+            <!-- MENU DE NAVEGAÇÃO PRINCIPAL -->
+            <nav class="navbar navbar-expand-sm bg-dark fixed-top" id="menuHeader">
                 <div class="container-fluid">
-                    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerElements" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerElements" aria-controls="navbarTogglerDemo02"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerElements">
@@ -22,7 +27,8 @@
                             <li class="nav-item"><a href="#inicio" class="nav-link text-white">Inicio</a></li>
                             <li class="nav-item"><a href="#tiposTexto" class="nav-link text-white">Text types</a></li>
                             <li class="nav-item"><a href="#container" class="nav-link text-white">Container</a></li>
-                            <li class="nav-item"><a href="#containerAtributos" class="nav-link text-white">Container com atributos</a></li>
+                            <li class="nav-item"><a href="#containerAtributos" class="nav-link text-white">Container com
+                                    atributos</a></li>
                             <li class="nav-item"><a href="#grid" class="nav-link text-white">Grid</a></li>
                             <li class="nav-item"><a href="#cores" class="nav-link text-white">Colors</a></li>
                             <li class="nav-item"><a href="#tabelas" class="nav-link text-white">Tables</a></li>
@@ -70,14 +76,21 @@
                 <p class="bg-white text-lowercase">UM PARAGRAFO COM LOWERCASE</p>
                 <p class="bg-white text-capitalize">Um parágrafo com capitalize</p>
                 <p class="text-white">Isto é um <mark> um mark com bootstrap </mark></p>
-                <p class="text-white">Isto é um <abbr title="Abbr é uma abreviação! E no title você põe o que ele significa"> um abbr com bootstrap </abbr></p>
-                <p class="text-white">Isto é um <blockquote class="blockquote bg-white"> um blockquote com bootstrap </blockquote> <blockquote class="blockquote-footer bg-white">E aqui um footer para o blockquote</blockquote></p>
+                <p class="text-white">Isto é um <abbr
+                        title="Abbr é uma abreviação! E no title você põe o que ele significa"> um abbr com bootstrap
+                    </abbr></p>
+                <p class="text-white">Isto é um
+                <blockquote class="blockquote bg-white"> um blockquote com bootstrap </blockquote>
+                <blockquote class="blockquote-footer bg-white">E aqui um footer para o blockquote</blockquote>
+                </p>
                 <dl class="bg-white">
                     <dt>Isto é um termo com o bootstrap</dt>
                     <dd> - E isso é uma descrição do termo</dd>
                 </dl>
                 <cite class="bg-white">Isso é um cite!</cite>
-                <p class="bg-white">Os termos a seguir são códigos HTML formatados pelo bootstrap! São eles <code>body</code>,<code>footer</code>,<code>header</code> e <code>main</code></p>
+                <p class="bg-white">Os termos a seguir são códigos HTML formatados pelo bootstrap! São eles
+                    <code>body</code>,<code>footer</code>,<code>header</code> e <code>main</code>
+                </p>
                 <p class="bg-white">O termo a seguir é um comando de recorte <kbd>Ctrl + x</kbd></p>
             </div>
             <hr>
@@ -283,10 +296,14 @@
             <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="alerta">
                 <div class="spaceSection"></div>
                 <p class="h1 text-white">Alerts</p>
-                <div class="alert alert-success"><strong>SUCCESS</strong> É algo que deu sucesso ou positivo! alert alert-success</div>
-                <div class="alert alert-info"><strong>INFO</strong> É algo neutro que indica uma informação! <a href="#" class="alert-link">clique aqui para saber mais, isto é um alert-link</a></div>
-                <div class="alert alert-warning"><strong>WARNING</strong> É algo que é um alerta, precisa de atenção!</div>
-                <div class="alert alert-danger"><strong>DANGER</strong> É algo que deu errado ou uma ação negativa!</div>
+                <div class="alert alert-success"><strong>SUCCESS</strong> É algo que deu sucesso ou positivo! alert
+                    alert-success</div>
+                <div class="alert alert-info"><strong>INFO</strong> É algo neutro que indica uma informação! <a href="#"
+                        class="alert-link">clique aqui para saber mais, isto é um alert-link</a></div>
+                <div class="alert alert-warning"><strong>WARNING</strong> É algo que é um alerta, precisa de atenção!
+                </div>
+                <div class="alert alert-danger"><strong>DANGER</strong> É algo que deu errado ou uma ação negativa!
+                </div>
                 <div class="alert alert-primary"><strong>PRIMARY</strong> É uma ação importante!</div>
                 <div class="alert alert-secondary"><strong>SECONDARY</strong> É uma ação menos importante!</div>
                 <div class="alert alert-dark"><strong>DARK</strong> Alerta em cinza!</div>
@@ -312,15 +329,15 @@
                 <button type="button" class="btn btn-link">Link</button>
                 <p class="h3 text-white">Button Outline</p>
                 <p class="bg-white">
-                <button type="button" class="btn btn-outline-primary">Primary outline</button>
-                <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
-                <button type="button" class="btn btn-outline-success">Success outline</button>
-                <button type="button" class="btn btn-outline-info">Info outline</button>
-                <button type="button" class="btn btn-outline-warning">Warning outline</button>
-                <button type="button" class="btn btn-outline-danger">Danger outline</button>
-                <button type="button" class="btn btn-outline-dark">Dark outline</button>
-                <button type="button" class="btn btn-outline-light">Light outline</button>
-                <button type="button" class="btn btn-outline-link">Link outline</button>
+                    <button type="button" class="btn btn-outline-primary">Primary outline</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
+                    <button type="button" class="btn btn-outline-success">Success outline</button>
+                    <button type="button" class="btn btn-outline-info">Info outline</button>
+                    <button type="button" class="btn btn-outline-warning">Warning outline</button>
+                    <button type="button" class="btn btn-outline-danger">Danger outline</button>
+                    <button type="button" class="btn btn-outline-dark">Dark outline</button>
+                    <button type="button" class="btn btn-outline-light">Light outline</button>
+                    <button type="button" class="btn btn-outline-link">Link outline</button>
                 <p class="h3 text-white">Botões ativados e desativados</p>
                 <button type="button" class="btn btn-primary active">Primary ativo</button>
                 <button type="button" class="btn btn-primary disabled">Primary desativado</button>
@@ -390,7 +407,7 @@
                     <div class="progress-bar bg-warning" style="width: 10%;">10%</div>
                     <div class="progress-bar bg-success" style="width: 50%;">50%</div>
                 </div>
-            </div> 
+            </div>
             <hr>
             <div class="spaceSection"></div>
 
@@ -400,20 +417,22 @@
                 <p class="h1 text-white">DropDown</p>
                 <p class="h3 text-white">DropDown para baixo</p>
                 <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Este é o botão do dropDown</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Este é o
+                        botão do dropDown</button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Link 1</a></li>
                         <li><a class="dropdown-item" href="#">Link 2</a></li>
                         <li><a class="dropdown-item" href="#">Link 3</a></li>
                     </ul>
                 </div>
-            <hr>
-            <div class="spaceSection"></div>
+                <hr>
+                <div class="spaceSection"></div>
 
-            <!-- SEÇÃO DE DROPDOWN PARA A LATERAL -->
+                <!-- SEÇÃO DE DROPDOWN PARA A LATERAL -->
                 <p class="h3 text-white">DropDown para o lado</p>
                 <div class="dropdown dropend">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Este é o botão do dropDown</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Este é o
+                        botão do dropDown</button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Link 1</a></li>
                         <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -430,13 +449,13 @@
                 <p class="h1 text-white">Slider</p>
                 <!-- Carrosel -->
                 <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicadores -->
+                    <!-- Indicadores -->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                     </div>
-                <!-- SlideShow -->
+                    <!-- SlideShow -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/los.jpg" alt="Los Angeles" class="d-block" style="width:100%">
@@ -448,7 +467,7 @@
                             <img src="images/new.jpg" alt="New York" class="d-block" style="width:100%">
                         </div>
                     </div>
-                <!-- Controles esquerda e direita -->
+                    <!-- Controles esquerda e direita -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
@@ -466,7 +485,7 @@
                 <p class="h1 text-white">Nav</p>
                 <nav class="navbar navbar-expand-sm bg-light">
                     <div class="container-fluid">
-                    <!-- Links -->
+                        <!-- Links -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Isso é um link muito legal</a>
@@ -479,7 +498,7 @@
                             </li>
                         </ul>
                     </div>
-              </nav>
+                </nav>
             </div>
             <hr>
             <div class="spaceSection"></div>
@@ -488,25 +507,26 @@
             <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3" id="modal">
                 <div class="spaceSection"></div>
                 <p class="h1 text-white">Modal</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Abrir o modal</button>
-                  <!-- O modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Abrir o
+                    modal</button>
+                <!-- O modal -->
                 <div class="modal" id="myModal">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Header do Modal</h4>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Header do Modal</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Corpo do Modal
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
                         </div>
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                          Corpo do Modal
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -518,7 +538,8 @@
                 <div class="spaceSection"></div>
                 <div class="offcanvas-header">
                     <h1 class="offcanvas-title" id="offcanvasLabel">Header</h1>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close"></button>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <p>Um texto super legal</p>
@@ -529,7 +550,8 @@
             <div class="container-fluid bg-secondary pb-3 pt-3 mb-3 mt-3">
                 <p class="h1 text-white">Offcanvas</p>
                 <!-- Botão para abrir a sidebar -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">Abrir a sidebar</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas">Abrir a sidebar</button>
             </div>
             <hr>
             <div class="spaceSection"></div>
@@ -538,4 +560,5 @@
     </div>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
